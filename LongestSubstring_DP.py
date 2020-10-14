@@ -3,7 +3,7 @@ def longestSubstring(string):
     lastseen={}
     startIdx=0
     longest=[0,1]
-    for i in range(1,len(string)):
+    for i in range(len(string)):
         char=string[i]
         if char in lastseen:
             startIdx=max(startIdx,lastseen[char]+1)
