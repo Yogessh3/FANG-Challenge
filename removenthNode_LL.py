@@ -10,7 +10,7 @@ def removeNode(head,n):
         head.value=head.next.value
         head.next=head.next.next
         return
-    while second is not None:
+    while second.next is not None:
         first=first.next
         second=second.next
     first.next=first.next.next
